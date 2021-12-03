@@ -1,7 +1,7 @@
 Package: gplsim
 Type: Package
 Title: Penalized Spline Estimation for GPLSIM
-Version: 0.9.0
+Version: 0.9.1
 Date: 2021-11-24
 Authors@R: c(
     person("Tianhai", "Zu", email = "zuti@mail.uc.edu", role = c("aut","trl","cre")),
@@ -17,9 +17,9 @@ Imports: mgcv, stats, minpack.lm
 LazyData: true
 RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2021-12-01 14:40:06 UTC; tianhaizu
+Packaged: 2021-12-03 01:52:23 UTC; tianhaizu
 Author: Tianhai Zu [aut, trl, cre],
   Yan Yu [aut]
 Maintainer: Tianhai Zu <zuti@mail.uc.edu>
 Repository: CRAN
-Date/Publication: 2021-12-02 08:30:02 UTC
+Date/Publication: 2021-12-03 10:00:04 UTC

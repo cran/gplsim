@@ -77,5 +77,5 @@ summary(result)
 
 
 #plot the estimated single index function curve
-plot.si(result)
+plot_si(result)
 }
