@@ -1,6 +1,6 @@
-150a55bbdf7516b8013a4a977ac41e1f *DESCRIPTION
+19cfc413fac5614047298cf9e2fe101f *DESCRIPTION
 4de534b8138844e3e534d08ef3dc9e56 *NAMESPACE
-594e85e3d1bf721a9ea77ea57cee19e3 *NEWS.md
+232fd96bf61562ebe109a724bbaa1437 *NEWS.md
 3845465571fc8e77cdef94c2b5428aa0 *R/gplsim.r
 04b99930d07da610e085208ca43dbdec *R/plsim_it.r
 ba6bdf31b0d06351511f98476f958086 *R/utilities.R
@@ -18,4 +18,4 @@ c8803f9c1181a1b9c1508531e4e2be2b *man/generate_data.Rd
 0cbe97d9aacd9c660f330ec3dec83e44 *man/summary.gplsim.Rd
 b508efd7bb927a36150a05bd52c5defb *tests/testthat.R
 5b20512a0a36f33722bbb7c6adb58bf0 *tests/testthat/Rplots.pdf
-c531cdead7c2f7ef08afc308862bdef5 *tests/testthat/test-gplsim.r
+9edab84d5d6430339e9b588c694b30ee *tests/testthat/test-gplsim.r
