@@ -12,4 +12,8 @@ We also added more supports on distributions, such as Gamma.
 
 # GPLSIM version 0.9.3
 
-Allow for large toleration when testing.
+Allowed for large toleration when testing.
+
+# GPLSIM version 1.0.0
+
+Removed unnecessary arguments.

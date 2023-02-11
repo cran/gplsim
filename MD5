@@ -1,7 +1,7 @@
-19cfc413fac5614047298cf9e2fe101f *DESCRIPTION
-4de534b8138844e3e534d08ef3dc9e56 *NAMESPACE
-232fd96bf61562ebe109a724bbaa1437 *NEWS.md
-3845465571fc8e77cdef94c2b5428aa0 *R/gplsim.r
+aef5e0bc27fe13bba38e13ec7612ad62 *DESCRIPTION
+d8f049567c038151bfb71be0ae8638e7 *NAMESPACE
+85c1c010505c92f11238e0ac4095c0dd *NEWS.md
+807967b4d68104d49a4433be0b513f72 *R/gplsim.r
 04b99930d07da610e085208ca43dbdec *R/plsim_it.r
 ba6bdf31b0d06351511f98476f958086 *R/utilities.R
 7533e16adb0cbbfa5005020d1b787549 *README.md
@@ -10,7 +10,7 @@ ba6bdf31b0d06351511f98476f958086 *R/utilities.R
 9a0654b01355b1e7145c14a6c3ae328c *man/add_sim_bound.Rd
 30f27849a4eb85a3d6471dcae6112217 *man/air.Rd
 c8803f9c1181a1b9c1508531e4e2be2b *man/generate_data.Rd
-335b0c238ce846f728fdb83c4f0ceb9e *man/gplsim.Rd
+490a51cc8b493d52cbd6fa504abced3e *man/gplsim.Rd
 2a45c9d4bba59bdcd777a5d23db49900 *man/plot_si.Rd
 0c142ce39bb915937e077addd37a7d18 *man/print.summary.gplsim.Rd
 0214a545b4d5ee8a19df5432f224739e *man/si.Rd

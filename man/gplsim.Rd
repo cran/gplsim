@@ -14,10 +14,9 @@ gplsim(...)
   Z = Z,
   family = gaussian(),
   penalty = TRUE,
-  penalty_type = "L2",
   profile = TRUE,
-  bs = "ps",
   user.init = NULL,
+  bs = "ps",
   ...
 )
 
@@ -26,10 +25,9 @@ gplsim(...)
   data,
   family = gaussian(),
   penalty = TRUE,
-  penalty_type = "L2",
   profile = TRUE,
-  bs = "ps",
   user.init = NULL,
+  bs = "ps",
   ...
 )
 }
@@ -51,13 +49,11 @@ The default family is \code{gaussian}.}
 
 \item{penalty}{Whether use penalized splines or un-penalized splines to fit the model. The default is TRUE.}
 
-\item{penalty_type}{The optional argument penalty_type is a character variable, which specifies the type of penalty used in the penalized splines estimation. The default penalty type is {L}_{2} penalty, while {L}_{1} is also supported.}
-
 \item{profile}{profile is a logical variable that indicates whether the algorithm with profile likelihood or algorithm with NLS procedure should be used. The default algorithm is set to algorithm with profile likelihood.}
 
-\item{bs}{bs is a character variable that specifies the spline basis in the estimation of unknown univariate function of single index. Default is P-splines.}
-
 \item{user.init}{The user.init is a numeric vector of the same length as the dimensionality of single index predictors. The users can use this argument to pass in any appropriate user-defined initial single-index coefficients based on prior information or domain knowledge. The default value is NULL.}
+
+\item{bs}{bs is a character variable that specifies the spline basis in the estimation of unknown univariate function of single index. Default is P-splines.}
 
 \item{formula}{A model formula;}
 
@@ -84,7 +80,7 @@ models to include nonlinear effect for some predictors.
 This function add formula interface to gplsim function
 }
 \details{
-For formula, method, see ?gplsim.formula
+For formula method, see ?gplsim.formula
 }
 \examples{
 # parameter settings

@@ -10,5 +10,5 @@ export(gplsim)
 export(plot_si)
 export(smooth.construct.tr.smooth.spec)
 importFrom("stats", "coef", "gaussian", "glm", "lm", "optim",
-                "printCoefmat", "quantile", "rbinom", "rgamma", "rnorm",
-                "rpois")
+               "printCoefmat", "quantile", "rbinom", "rgamma", "rnorm",
+               "rpois")

@@ -107,7 +107,7 @@ gplsim <- function( ...)
 #' partially linear single index models, which extend the generalized linear
 #' models to include nonlinear effect for some predictors.
 #'
-#' For formula, method, see ?gplsim.formula
+#' For formula method, see ?gplsim.formula
 #'
 #' @param Y Response variable, should be a vector.
 #' @param X Single index covariates.
@@ -117,7 +117,6 @@ gplsim <- function( ...)
 #' Families supported are \code{binomial}, \code{gaussian}.
 #' The default family is \code{gaussian}.
 #' @param penalty Whether use penalized splines or un-penalized splines to fit the model. The default is TRUE.
-#' @param penalty_type The optional argument penalty_type is a character variable, which specifies the type of penalty used in the penalized splines estimation. The default penalty type is {L}_{2} penalty, while {L}_{1} is also supported.
 #' @param profile profile is a logical variable that indicates whether the algorithm with profile likelihood or algorithm with NLS procedure should be used. The default algorithm is set to algorithm with profile likelihood.
 #' @param bs bs is a character variable that specifies the spline basis in the estimation of unknown univariate function of single index. Default is P-splines.
 #' @param user.init The user.init is a numeric vector of the same length as the dimensionality of single index predictors. The users can use this argument to pass in any appropriate user-defined initial single-index coefficients based on prior information or domain knowledge. The default value is NULL.
@@ -150,8 +149,8 @@ gplsim <- function( ...)
 #' @rdname gplsim
 #' @method gplsim default
 #' @export
-gplsim.default <- function(Y=Y,X=X,Z=Z,family=gaussian(),penalty=TRUE,
-                   penalty_type = "L2",profile = TRUE, bs="ps",user.init= NULL,...){
+gplsim.default <- function(Y=Y,X=X,Z=Z,family=gaussian(), penalty=TRUE,
+                           profile = TRUE, user.init= NULL, bs="ps",...){
   #validate inputs of X,Y,Z
   stopifnot(is.numeric(Y),is.vector(Y))
   stopifnot(is.numeric(X),is.matrix(X))
@@ -222,7 +221,6 @@ gplsim.default <- function(Y=Y,X=X,Z=Z,family=gaussian(),penalty=TRUE,
 #' Families supported are \code{binomial}, \code{gaussian}.
 #' The default family is \code{gaussian}.
 #' @param penalty Whether use penalized splines or un-penalized splines to fit the model. The default is TRUE.
-#' @param penalty_type The optional argument penalty_type is a character variable, which specifies the type of penalty used in the penalized splines estimation. The default penalty type is {L}_{2} penalty, while {L}_{1} is also supported.
 #' @param profile profile is a logical variable that indicates whether the algorithm with profile likelihood or algorithm with NLS procedure should be used. The default algorithm is set to algorithm with profile likelihood.
 #' @param bs bs is a character variable that specifies the spline basis in the estimation of unknown univariate function of single index. Default is P-splines.
 #' @param user.init The user.init is a numeric vector of the same length as the dimensionality of single index predictors. The users can use this argument to pass in any appropriate user-defined initial single-index coefficients based on prior information or domain knowledge. The default value is NULL.
@@ -237,7 +235,7 @@ gplsim.default <- function(Y=Y,X=X,Z=Z,family=gaussian(),penalty=TRUE,
 #' @method gplsim formula
 #' @export
 gplsim.formula <- function(formula, data, family=gaussian(), penalty=TRUE,
-                   penalty_type = "L2",profile = TRUE, bs="ps",user.init= NULL,...){
+                   profile = TRUE, user.init= NULL, bs="ps",...){
   #parse formula
   lhs <- if(length(formula) == 3) formula[[2]] else NULL
   lhsVars <- all.vars(lhs)
